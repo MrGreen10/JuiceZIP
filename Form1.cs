@@ -27,7 +27,7 @@ namespace JuiceZIP
 
             using (ZipFile zip = ZipFile.Read(textBox1.Text))
             {
-                // Önce eski dosyaları temizle
+               
                 if (Directory.Exists(extractPath))
                 {
                     foreach (string file in Directory.GetFiles(extractPath))
@@ -43,11 +43,11 @@ namespace JuiceZIP
                 {
                     string destinationPath = Path.GetFullPath(Path.Combine(extractPath, entry.FileName));
 
-                    // Dizin kaçışını engelle
+                
                     if (!destinationPath.StartsWith(extractPath, StringComparison.OrdinalIgnoreCase))
                     {
                         MessageBox.Show($"Dizin kaçışı tespit edildi: {entry.FileName}", "JuiceZIP");
-                        continue; // Bu entry atlanacak
+                        continue; 
                     }
 
                     entry.Extract(extractPath, ExtractExistingFileAction.OverwriteSilently);
@@ -112,3 +112,4 @@ namespace JuiceZIP
         }
     }
 }
+
