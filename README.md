@@ -1,4 +1,4 @@
-Projede kullandığım DotNetZip kütüphanesini NuGet üseinden yükledim.
+Projede kullandığım DotNetZip kütüphanesini NuGet üzerinden yükledim.
 Kütüphanenin Lisansı:Microsoft Public License (MS-PL)
 Kütüphanenin reposu:https://github.com/haf/DotNetZip.Semverd
 # Sorumluluk Reddi
